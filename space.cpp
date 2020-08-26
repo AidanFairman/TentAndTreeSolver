@@ -10,7 +10,7 @@ Space::~Space(){
 }
 
 bool Space::operator==(Space* other){
-    return this->type == other->type && *(this->association) == *(other->association);
+    return this->type == other->type && *this->association == *other->association;
 }
 
 bool Space::operator==(space_type type){

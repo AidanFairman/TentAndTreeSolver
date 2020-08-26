@@ -12,9 +12,12 @@ public:
 private:
     //methods
     bool solve();
-    void eliminateCornerOnly();
+    void eliminateImpossible();
+    int hasUnassociated(int col, int row, space_type type);
     void eliminateAdjacentRows(int row);
+    int** generateAllPossibleSpacesRow(int row);
     void eliminateAdjacentColumns(int col);
+    int** generateAllPossibleSpacesCol(int col);
     void associateSearch();
     void place(int col, int row, space_type type);
     void associate(int col, int row, int assocCol, int assocRow);

@@ -1,2 +1,3 @@
 tasks:
-  - init: g++ -c TentsAndTreesSolver.cpp
+  - init: g++ *.cpp -o TentsAndTreesSolver.exe
+  command: TentsAndTreesSolver.exe
